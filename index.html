@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Thiago Andrade Rodrigues - Técnico em Informática.">
+    <title>Thiago Andrade Rodrigues | Portfólio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d0d16;
+            color: #f2f2f7;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #151525;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #292943;
+        }
+
+        .logo {
+            color: #a78bfa;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #eeeeF5;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        section {
+            padding: 75px 8%;
+        }
+
+        .inicio {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 45px;
+            flex-wrap: wrap;
+        }
+
+        .inicio-texto {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .inicio-texto h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .destaque {
+            color: #a78bfa;
+        }
+
+        .inicio-texto p {
+            color: #c5c5d4;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #8b5cf6;
+            box-shadow: 0 0 30px #8b5cf655;
+            display: block;
+            margin: auto;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #8b5cf6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .botao:hover {
+            background: #7041d8;
+        }
+
+        .titulo {
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #a78bfa;
+        }
+
+        .sobre p {
+            max-width: 850px;
+            color: #c5c5d4;
+            margin-bottom: 15px;
+        }
+
+        .grade {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #181829;
+            border: 1px solid #292943;
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #8b5cf6;
+        }
+
+        .card h3 {
+            color: #a78bfa;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #c5c5d4;
+            font-size: 15px;
+        }
+
+        .contato p {
+            color: #c5c5d4;
+            margin-bottom: 12px;
+        }
+
+        .contato a {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        .contato a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #151525;
+            border-top: 1px solid #292943;
+            text-align: center;
+            padding: 22px;
+            color: #9999ad;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .inicio {
+                text-align: center;
+                flex-direction: column-reverse;
+                justify-content: center;
+            }
+
+            .inicio-texto p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .avatar {
+                width: 210px;
+                height: 210px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Thiago.dev</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formacao">Formação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INÍCIO -->
+        <section class="inicio" id="inicio">
+            <div class="inicio-texto">
+                <h1>Olá, eu sou<br>
+                    <span class="destaque">Thiago Andrade Rodrigues</span>
+                </h1>
+
+                <p>
+                    Estudante de Técnico em Informática, interessado em tecnologia,
+                    desenvolvimento web, manutenção de computadores e soluções digitais.
+                    Estou em busca de uma oportunidade para aprender, desenvolver minhas
+                    habilidades e crescer profissionalmente.
+                </p>
+
+                <a class="botao" href="#contato">Entre em contato</a>
+            </div>
+
+            <div>
+                <img
+                    class="avatar"
+                    src="img/avatar-thiago.jpg"
+                    alt="Foto de perfil de Thiago Andrade Rodrigues"
+                >
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section class="sobre" id="sobre">
+            <h2 class="titulo">Sobre mim</h2>
+
+            <p>
+                Meu nome é Thiago Andrade Rodrigues e estou cursando Técnico em
+                Informática. Tenho interesse pela área de tecnologia e gosto de
+                aprender coisas novas, principalmente relacionadas à informática,
+                programação e resolução de problemas.
+            </p>
+
+            <p>
+                Busco desenvolver meus conhecimentos por meio de atividades práticas
+                e projetos, sempre procurando melhorar minhas habilidades técnicas.
+            </p>
+
+            <p>
+                Também pratico Jiu-Jitsu, atividade que contribui para minha disciplina,
+                concentração, persistência e capacidade de lidar com desafios.
+            </p>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h2 class="titulo">Minhas habilidades</h2>
+
+            <div class="grade">
+                <article class="card">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>
+                        Conhecimentos em HTML e estruturação de páginas para a criação
+                        de sites.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Canva</h3>
+                    <p>
+                        Criação e edição de artes, apresentações e materiais visuais.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Manutenção de Computadores</h3>
+                    <p>
+                        Conhecimentos em instalação, configuração e manutenção
+                        de equipamentos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Análise de Aplicativos</h3>
+                    <p>
+                        Interesse em analisar funcionalidades, identificar problemas
+                        e compreender o funcionamento de aplicações.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Produção de Podcasts</h3>
+                    <p>
+                        Experiência com captação de áudio, microfones, mesa de som,
+                        fones de ouvido, gravação e edição.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2 class="titulo">Meus projetos</h2>
+
+            <div class="grade">
+                <article class="card">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>
+                        Desenvolvimento deste site para apresentar minhas habilidades,
+                        conhecimentos e trajetória na área de informática.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Projetos Acadêmicos</h3>
+                    <p>
+                        Atividades desenvolvidas durante o curso Técnico em Informática,
+                        envolvendo programação, tecnologia e banco de dados.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Projetos de Design</h3>
+                    <p>
+                        Criação de materiais gráficos e apresentações utilizando
+                        ferramentas de design.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section id="formacao">
+            <h2 class="titulo">Formação acadêmica</h2>
+
+            <div class="card">
+                <h3>Técnico em Informática</h3>
+                <p>Curso em andamento.</p>
+                <p>
+                    Aprendizado em informática, programação, desenvolvimento web,
+                    manutenção e tecnologias digitais.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contato" id="contato">
+            <h2 class="titulo">Entre em contato</h2>
+
+            <p>
+                <strong>E-mail:</strong>
+                <a href="mailto:thiagoceet@gmail.com">
+                    thiagoceet@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Localização:</strong> Vila Velha - ES
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    Meu perfil no GitHub
+                </a>
+            </p>
+
+            <p>
+                Estou aberto a oportunidades de estágio e aprendizado na área
+                de Tecnologia da Informação.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Thiago Andrade Rodrigues. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
